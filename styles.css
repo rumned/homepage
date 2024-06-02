@@ -9,11 +9,11 @@
 	line-height: 1.5;
   
 	--primary-text-color: #181820;
-	--secondary-text-color: #5c5c62;
+	--secondary-text-color: #280a42;
 	--durability-text-color: #6a737d9c;
-	--icon-color: #6a737d;
+	--icon-color: #0ca234;
 	--border-color: #ff9a0045;
-	--text-decoration-color: #ff9a00;
+	--text-decoration-color: #0400ff;
   }
   
   .container {
@@ -122,8 +122,8 @@
   
   .contact-info__avatar {
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	object-fit: cover;
 	border: 3px solid;
 	border-color: var(--text-decoration-color);
@@ -298,17 +298,17 @@
   }
 
   .box {
-	border: 2px solid black;
+	border: 2px solid blueviolet;
 	padding:5px;
 	margin:5px;
-	width: 100px;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
   }
 
   .resume-thumbnail { 
-	width: 100px;
-	height: 200px;
+	width: 50px;
+	height: 75px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
