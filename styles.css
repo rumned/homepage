@@ -122,8 +122,8 @@
   
   .contact-info__avatar {
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
 	object-fit: cover;
 	border: 3px solid;
 	border-color: var(--text-decoration-color);
@@ -296,3 +296,21 @@
   .additional-info__languages-item {
 	color: var(--secondary-text-color);
   }
+
+  .box {
+	border: 2px solid black;
+	padding:5px;
+	margin:5px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .resume-thumbnail { 
+	width: 300px;
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+ }
