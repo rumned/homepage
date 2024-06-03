@@ -187,7 +187,7 @@
 	color: var(--primary-text-color);
 	text-align: left;
 	margin-bottom: 10px;
-	margin-left: 15px;
+	margin-left: 30px;
 	text-decoration-line: underline;
 	text-decoration-color: var(--border-color);
   }
@@ -196,7 +196,7 @@
 	color: var(--durability-text-color);
 	text-align: left;
 	margin-bottom: 10px;
-	margin-left: 15px;
+	margin-left: 40px;
 	font-size: 15px;
 	font-weight: bold;
   }
@@ -205,19 +205,20 @@
 	color: var(--primary-text-color);
 	text-decoration-color: var(--text-decoration-color);
 	text-align: left;
-	margin-left: 15px;
+	margin-left: 45px;
 	margin-bottom: 3px;
   }
   
   .experiences__company-project {
-	margin-left: 15px;
-	margin-bottom: 25px;
+	margin-left: 35px;
+	/* margin-bottom: 10px; */
   }
   
   .experiences__company-project-role {
 	color: var(--durability-text-color);
 	text-align: left;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+	margin-left: 15px;
 	font-size: 15px;
 	font-style: italic
   }
@@ -232,8 +233,8 @@
   
   .experiences__company-project-responsibilities {
 	color: var(--secondary-text-color);
-	padding-left: 20px;
-	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-bottom: 15px;
   }
   
   .additional-info {
@@ -250,6 +251,7 @@
 	color: var(--primary-text-color);
 	text-align: left;
 	margin-bottom: 10px;
+	margin-left: 20px;
 	text-decoration-line: underline;
 	text-decoration-color: var(--border-color);
   }
@@ -257,7 +259,7 @@
   .additional-info__education-university-durability {
 	color: var(--durability-text-color);
 	text-align: left;
-
+	margin-left: 20px;
 	/* margin-bottom: 3px; */
 	font-size: 15px;
 	font-weight: bold;
@@ -268,7 +270,7 @@
 	text-align: left;
 
 	/* margin-bottom: 2px; */
-	margin-left: 5px;
+	margin-left: 25px;
 	font-size: 20px;
   }
   
@@ -276,14 +278,14 @@
 	color: var(--secondary-text-color);
 	text-align: left;
 	margin-bottom: 5px;
-	margin-left: 15px;
+	margin-left: 30px;
 	font-size: 15px;
 	font-style: italic;
   }
   
   .additional-info__languages {
 	margin-bottom: 15px;
-	margin-left: 20px;
+	margin-left: 35px;
   }
   
   .additional-info__languages-header {
