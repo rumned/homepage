@@ -1,0 +1,23 @@
+body{
+  font-family: font-family: Roboto, Verdana, sans-serif;
+}
+.container {
+  border-radius: 5px;
+  background-color: maroon;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col img {
+  width: 300px;
+  margin: auto;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  margin: auto;
+}
