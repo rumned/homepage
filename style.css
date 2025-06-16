@@ -1,17 +1,32 @@
-body{
-  font-family: font-family: Roboto, Verdana, sans-serif;
+body {
+  font-family: Roboto, Verdana, sans-serif;
+  background-image: url(assets/bgimage.gif);
+  background-repeat: repeat-y;
 }
+
 .container {
   border-radius: 5px;
-  background-color: maroon;
+  border-color: darkgray;
+  background-color: transparent;
   padding: 20px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .col img {
   width: 300px;
+  margin: auto;
+}
+
+.col h2 {
+  width: 500px;
+  margin: auto;
+}
+
+.col p {
+  width: 500px;
   margin: auto;
 }
 
