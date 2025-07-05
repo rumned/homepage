@@ -72,6 +72,11 @@ button {
 #email {
   width: 70%;
 }
+#name,
+#email,
+#message {
+  background-color: #e5e0e0;
+}
 label[for="name"],
 label[for="message"],
 label[for="email"] {
