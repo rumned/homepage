@@ -70,7 +70,13 @@ button {
 }
 #name,
 #email {
-  width: 50%;
+  width: 70%;
+}
+label[for="name"],
+label[for="message"],
+label[for="email"] {
+  background-color: white;
+  width: 70%;
 }
 .honeypot-field {
   display: none;
