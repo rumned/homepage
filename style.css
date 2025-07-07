@@ -15,6 +15,10 @@ body {
   justify-content: center;
 }
 
+.resume img {
+  width: 30px;
+}
+
 .col img {
   width: 300px;
   margin: auto;
