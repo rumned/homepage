@@ -49,16 +49,15 @@ body {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
   margin-bottom: 15px;
-
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width <= 576px) {
   .main-info,
-  .contact_info_container {
+  .contact-info__container {
     flex-direction: column;
   }
 
-  .contact_info_container {
+  .contact-info__container {
     align-items: center;
   }
 
@@ -155,7 +154,7 @@ body {
   fill: var(--icon-color);
 }
 
-.intro_text {
+.intro__text {
   color: var(--primary-text-color);
   text-align: justify;
 }
