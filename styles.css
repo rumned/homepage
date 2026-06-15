@@ -15,12 +15,18 @@ body {
   --icon-color: #58a6ff;
   --border-color: #58a6ff40;
   --text-decoration-color: #58a6ff40;
+  --text-background-color: #58a6ff97;
 }
 
 .container {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1200px;
+}
+
+.container.qualifications{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .fh {
@@ -51,25 +57,6 @@ body {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width <= 576px) {
-  .main-info,
-  .contact-info__container {
-    flex-direction: column;
-  }
-
-  .contact-info__container {
-    align-items: center;
-  }
-
-  .contact-info__block:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .experiences {
-    margin-right: 0;
-  }
-}
-
 .contact-info__header,
 .contact-info__sub-header {
   text-align: center;
@@ -77,9 +64,8 @@ body {
 
 .contact-info__header {
   color: var(--primary-text-color);
+  margin-top: 15px;
   margin-bottom: 15px;
-  /* text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline; */
 }
 
 .contact-info__sub-header {
@@ -90,7 +76,8 @@ body {
 .contact-info__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info__block--center {
@@ -126,11 +113,15 @@ body {
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--icon-color);
+}
+
+.contact__link{
+  text-decoration: underline;
 }
 
 .intro {
@@ -172,7 +163,8 @@ body {
 
 .experiences {
   flex: 1 1 60%;
-  margin-right: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .experiences__header {
@@ -197,8 +189,7 @@ body {
 }
 
 .experiences__company-project {
-  margin-left: 15px;
-  margin-bottom: 25px;
+  margin: auto;
 }
 
 .experiences__company-project-role {
@@ -265,4 +256,128 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+.links-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.links-header {
+  color: var(--icon-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.links-box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* PDF section: a single box centered in the middle */
+.pdf-container {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.pdf-container .links-box {
+  width: 100%;
+  max-width: 320px;
+}
+
+.links-box {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--border-color);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.links-box:hover {
+  border: 1px solid var(--icon-color);
+}
+
+/* The image fills the box and sits behind the label */
+.links-box__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* The link covers the whole box and centers its label */
+.links-box__link {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Gradient overlay sitting on top of the image, beneath the label */
+.links-box__link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.15));
+}
+
+.links-subtitle {
+  position: relative;
+  z-index: 1;
+  color: var(--primary-text-color);
+  background-color: var(--text-background-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive: collapse columns as the screen narrows */
+@media screen and (max-width: 768px) {
+  .links-box-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .main-info,
+  .contact-info__container {
+    flex-direction: column;
+  }
+
+  .contact-info__container {
+    align-items: center;
+  }
+
+  .contact-info__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .experiences {
+    margin-right: 0;
+  }
+
+  .container.qualifications {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .links-box-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .links-box {
+    width: 100%;
+    max-width: 320px;
+  }
 }
